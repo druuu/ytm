@@ -70,6 +70,7 @@ function set_audio(node, videoid, autoplay) {
 var lis = document.getElementsByTagName('li');
 var url = new URL(window.location.href);
 var autoplay = url.searchParams.get('autoplay');
+var autoplay = true;
 for (var i=0; i<lis.length; i++) {
     var videoid = lis[i].getAttribute('data-id');
     set_audio(lis[i], videoid, autoplay);

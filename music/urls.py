@@ -11,6 +11,4 @@ urlpatterns = [
     re_path('playlist/$', playlist, name='playlist'),
     re_path('song/(?P<videoid>[^/]+)/(?P<title>[^/]+)$', song, name='song'),
     re_path('src/(?P<videoid>[^/]+)/$', get_src, name='get_src'),
-
-    re_path('test', test, name='test'),
 ]

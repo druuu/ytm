@@ -54,10 +54,5 @@ def get_src(request, videoid):
 
 
 def update(request):
-    os.system('../env/bin/pip install --yes --upgrade youtube-dl')
+    os.system('../env/bin/pip install --upgrade youtube-dl')
     return HttpResponse('updated')
-
-
-def test(request):
-    results = utils.get_results(request.GET['q'])
-    return render(request, 'music.html', {'results': results})
